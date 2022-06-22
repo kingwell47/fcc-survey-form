@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+    <title>Survey Form</title>
+  </head>
+  <body>
+    <h1 id="title">Survey Form</h1>
+    <p id="description">This short survey form was built by Joel P. Doctor</p>
+    <form action="" id="survey-form">
+      <fieldset>
+        <label for="name" id="name-label">
+          Please enter your name:
+          <input type="text" id="name" required />
+        </label>
+        <label for="email" id="email-label">
+          Please enter your email:
+          <input type="email" id="email" required />
+        </label>
+        <label for="number" id="number-label">
+          Please enter your number:
+          <input type="number" id="number" min="4" max="11" />
+        </label>
+      </fieldset>
+      <fieldset>
+        <label for="starter" id="starter-label">
+          Choose your starter:
+          <select name="starter" id="dropdown">
+            <option value="">I choose...</option>
+            <option value="fire">Charmander</option>
+            <option value="water">Squirtle</option>
+            <option value="grass">Bulbasaur</option>
+          </select>
+        </label>
+        <label for="region" id="region-label">
+          Choose your region:
+          <input type="radio" name="region" id="kanto" checked /> Kanto
+          <input type="radio" name="region" id="johto" /> Johto
+          <input type="radio" name="region" id="sinnoh" /> Sinnoh
+        </label>
+        <label for="items" id="items-label">
+          Starting items:
+          <input type="checkbox" name="items" value="potion" checked /> Potion
+          x10
+          <input type="checkbox" name="items" value="pokeball" checked />
+          Pokeball x10
+          <input type="checkbox" name="items" value="revive" /> Revive x10
+          <input type="checkbox" name="items" value="rare-candy" /> Rare Candy
+          x10
+        </label>
+      </fieldset>
+      <fieldset>
+        <label for="battle-quote">
+          What is your battle quote?
+          <textarea
+            name=""
+            id=""
+            cols="30"
+            rows="10"
+            placeholder="I like shorts! They are comfy and easy to wear!"
+          ></textarea>
+        </label>
+      </fieldset>
+      <input type="submit" value="submit" id="submit" />
+    </form>
+  </body>
+</html>
