@@ -29,45 +29,56 @@
           </label>
         </fieldset>
         <fieldset>
-          <label for="starter" id="starter-label">
-            Choose your starter:
-            <select name="starter" id="dropdown">
-              <option value="">I choose...</option>
-              <option value="fire">Charmander</option>
-              <option value="water">Squirtle</option>
-              <option value="grass">Bulbasaur</option>
-            </select>
-          </label>
-          <label for="region" id="region-label">
-            Choose your region:
+          <legend>Choose your starter:</legend>
+          <select name="starter" id="dropdown">
+            <option value="">I choose...</option>
+            <option value="fire">Charmander</option>
+            <option value="water">Squirtle</option>
+            <option value="grass">Bulbasaur</option>
+          </select>
+        </fieldset>
+        <fieldset id="region">
+          <legend>Choose your region:</legend>
+          <label for="region">
             <input type="radio" name="region" id="kanto" checked /> Kanto
+          </label>
+          <label for="region">
             <input type="radio" name="region" id="johto" /> Johto
+          </label>
+          <label for="region">
             <input type="radio" name="region" id="sinnoh" /> Sinnoh
           </label>
-          <label for="items" id="items-label">
-            Starting items:
+        </fieldset>
+        <fieldset>
+          <legend>Starting items:</legend>
+          <label for="items">
             <input type="checkbox" name="items" value="potion" checked /> Potion
             x10
+          </label>
+          <label for="items"> </label>
+          <label for="items">
             <input type="checkbox" name="items" value="pokeball" checked />
             Pokeball x10
+          </label>
+          <label for="items">
             <input type="checkbox" name="items" value="revive" /> Revive x10
+          </label>
+          <label for="items">
             <input type="checkbox" name="items" value="rare-candy" /> Rare Candy
             x10
           </label>
         </fieldset>
         <fieldset>
-          <label for="battle-quote">
-            What is your battle quote?
-            <textarea
-              name=""
-              id=""
-              cols="30"
-              rows="10"
-              placeholder="I like shorts! They are comfy and easy to wear!"
-            ></textarea>
-          </label>
+          <legend>What is your battle quote?</legend>
+          <textarea
+            name=""
+            id=""
+            cols="30"
+            rows="10"
+            placeholder="I like shorts! They are comfy and easy to wear!"
+          ></textarea>
         </fieldset>
-        <input type="submit" value="submit" id="submit" />
+        <input type="submit" value="Submit" id="submit" />
       </form>
     </main>
   </body>

@@ -34,10 +34,11 @@ input, select, textarea {
     width: 100%;
 }
 
-* + * {
-    margin-bottom: 0.5rem;
+input[type="radio"], input[type="checkbox"] {
+    width: unset;
+    display: inline;
 }
 
-/* label {
-    padding: 0.5rem;
-} */
+fieldset + * {
+    margin-bottom: 1rem;
+}
