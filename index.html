@@ -10,26 +10,27 @@
   <body>
     <header>
       <h1 id="title">Survey Form</h1>
-      <p id="description">This short survey form was built by Joel P. Doctor</p>
+      <p id="description">Trainer Survey</p>
     </header>
     <main>
       <form action="" id="survey-form">
         <fieldset>
+          <legend>Your info</legend>
           <label for="name" id="name-label">
-            Please enter your name:
+            Name:
             <input type="text" id="name" required />
           </label>
           <label for="email" id="email-label">
-            Please enter your email:
+            Email:
             <input type="email" id="email" required />
           </label>
           <label for="number" id="number-label">
-            Please enter your number:
+            Contact number:
             <input type="number" id="number" min="4" max="11" />
           </label>
         </fieldset>
         <fieldset>
-          <legend>Choose your starter:</legend>
+          <legend>Choose your starter</legend>
           <select name="starter" id="dropdown">
             <option value="">I choose...</option>
             <option value="fire">Charmander</option>
@@ -38,7 +39,7 @@
           </select>
         </fieldset>
         <fieldset id="region">
-          <legend>Choose your region:</legend>
+          <legend>Choose your region</legend>
           <label for="region">
             <input type="radio" name="region" id="kanto" checked /> Kanto
           </label>
@@ -50,12 +51,11 @@
           </label>
         </fieldset>
         <fieldset>
-          <legend>Starting items:</legend>
+          <legend>Starting items</legend>
           <label for="items">
             <input type="checkbox" name="items" value="potion" checked /> Potion
             x10
           </label>
-          <label for="items"> </label>
           <label for="items">
             <input type="checkbox" name="items" value="pokeball" checked />
             Pokeball x10

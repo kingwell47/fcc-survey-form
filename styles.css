@@ -39,6 +39,31 @@ input[type="radio"], input[type="checkbox"] {
     display: inline;
 }
 
+input[type="submit"] {
+    height: 2rem;
+    width: 50%;
+    margin: 1rem auto;
+    font-family: inherit;
+    font-weight: 700;
+    color: var(--color-500);
+    background-color: var(--color-200);
+    border: none;
+    border-radius: 1rem;
+}
+
 fieldset + * {
-    margin-bottom: 1rem;
+    margin-top: 1rem;
+}
+
+label + * {
+    margin-top: 1rem;
+}
+
+legend {
+    text-align: center;
+}
+
+fieldset {
+    border: none;
+    border-bottom: 1px var(--color-200) solid;
 }
