@@ -1,69 +1,97 @@
 :root {
-    --color-700: rgb(37, 29, 58);
-    --color-500: rgb(42, 37, 80);
-    --color-300: rgb(224, 77, 1);
-    --color-200: rgb(255, 119, 0);
+  --color-700: rgb(37, 29, 58);
+  --color-500: rgb(42, 37, 80);
+  --color-300: rgb(224, 77, 1);
+  --color-200: rgb(255, 119, 0);
 }
 
 body {
-    margin: 0;
-    padding: 0;
-    background-color: var(--color-700);
-    color: var(--color-200);
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: var(--color-700);
+  color: var(--color-200);
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
 }
 
-header, footer {
-    text-align: center;
+header,
+footer {
+  text-align: center;
 }
 
-main {    
-    min-width: 23.4375rem;
-    max-width: 45rem;
-    margin: 0 auto;
+header p {
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+main {
+  min-width: 23.4375rem;
+  max-width: 45rem;
+  margin: 0 auto;
 }
 
 fieldset {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
-input, select, textarea {
-    display: block;
-    width: 100%;
+input,
+select,
+textarea {
+  display: block;
+  width: 100%;
 }
 
-input[type="radio"], input[type="checkbox"] {
-    width: unset;
-    display: inline;
+input[type="radio"],
+input[type="checkbox"] {
+  width: unset;
+  display: inline;
 }
 
 input[type="submit"] {
-    height: 2rem;
-    width: 50%;
-    margin: 1rem auto;
-    font-family: inherit;
-    font-weight: 700;
-    color: var(--color-500);
-    background-color: var(--color-200);
-    border: none;
-    border-radius: 1rem;
+  height: auto;
+  width: auto;
+  padding: 0.5em 1em;
+  margin: 1rem auto;
+  font-family: inherit;
+  font-weight: 700;
+  color: var(--color-500);
+  background-color: var(--color-200);
+  border: none;
+  border-radius: 1rem;
 }
 
 fieldset + * {
-    margin-top: 1rem;
+  margin-top: 1rem;
 }
 
 label + * {
-    margin-top: 1rem;
+  margin-top: 1rem;
+}
+
+label[for="region"] + * {
+  margin-left: 1rem;
 }
 
 legend {
-    text-align: center;
+  text-align: center;
 }
 
 fieldset {
-    border: none;
-    border-bottom: 1px var(--color-200) solid;
+  border: none;
+  border-bottom: 1px var(--color-200) solid;
+}
+
+footer {
+  font-size: 0.75rem;
+  margin-bottom: 1rem;
+}
+
+#region {
+  flex-direction: row;
+}
+
+#region label + * {
+  margin-top: unset;
 }
